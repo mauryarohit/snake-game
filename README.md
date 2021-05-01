@@ -1,6 +1,6 @@
 # snake-game
 Inspired by:
-(I Built A Snake Game By Reversing A Linked List (JavaScript & React project tutorial)
+(I Built A Snake Game By Reversing A Linked List (JavaScript & React project tutorial)<br />
 Follow this link: https://www.youtube.com/watch?v=7Rkib_fvowE&ab_channel=Cl%C3%A9mentMihailescu
 
 1. I will try creating a snake-game inspired by above video.
@@ -10,19 +10,19 @@ Follow this link: https://www.youtube.com/watch?v=7Rkib_fvowE&ab_channel=Cl%C3%A
 Steps to be performed:
 
  1. Create board.
- 2. Create Snake
-    a. Represent using Singly Linked List.
-    b. Handling snake growth.
-    c. Snake direction reversal*.
- 3. Styles: Snake Cell & Food Cell.
- 4. Handling keypress.
- 5. Handling movements.
-    a. Arrow keys to change direction.
-    b. Spacebar for starting/pausing* the game.
- 6. Handling Food Consumption.
-    a. Two types of food, generate both randomly*
-        i. Poison : Make snake shorter by 1 unit and reverse direction (cannot be generated when snake.length == 1)
-        ii. Life: Increment snake's length.
+ 2. Create Snake<br />
+    a. Represent using Singly Linked List.<br />
+    b. Handling snake growth.<br />
+    c. Snake direction reversal*.<br />
+ 3. Styles: Snake Cell & Food Cell.<br />
+ 4. Handling keypress.<br />
+ 5. Handling movements.<br />
+    a. Arrow keys to change direction.<br />
+    b. Spacebar for starting/pausing* the game.<br />
+ 6. Handling Food Consumption.<br />
+    a. Two types of food, generate both randomly*<br />
+        i. Poison : Make snake shorter by 1 unit and reverse direction (cannot be generated when snake.length == 1)<br />
+        ii. Life: Increment snake's length.<br />
  7. Handling death.
  8. Handling scores.
  9. Handle game start/end.
