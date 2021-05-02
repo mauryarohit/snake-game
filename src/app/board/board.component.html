@@ -1,7 +1,9 @@
 <div class="center">
     
     <div class="text-color" *ngFor="let row of board">
-        <div class="box" *ngFor="let col of board">
+        <div class="box" *ngFor="let col of board"
+            [ngClass]="{'snake': getSnake(row, col), 'food': (row === food.row && col === food.col)}"
+            >
             {{row}},{{col}}
         </div>
     </div>
