@@ -24,11 +24,6 @@ export class SnakeService {
     return false;
   }
 
-  addFood(snakeTail: Snake, row: number, col: number): void {
-    snakeTail.next = new Snake(row, col);
-    snakeTail = snakeTail.next;
-  }
-
   moveSnake(snakeHead: Snake, direction: Direction): void {
     // Invalid Keypress
     if (direction === Direction.INVALID) { return; }
