@@ -36,12 +36,13 @@ export class BoardComponent implements OnInit {
     for (let i = 0; i < BOARD_SIZE; i++) {
       this.board.push(i);
     }
-
+    this.increaseSnakeLengthByOne(this.snakeHead.row, this.snakeHead.col);
   }
 
   newGame() {
     this.snakeHead = new Snake(randomNumber(0, BOARD_SIZE), randomNumber(0, BOARD_SIZE), Direction.RIGHT);
     this.snakeTail = this.snakeHead;
+    this.increaseSnakeLengthByOne(this.snakeHead.row, this.snakeHead.col);
     this.currDir = Direction.RIGHT;
     this.randomFoodOnBoard();
   }

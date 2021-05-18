@@ -1,11 +1,27 @@
-<div class="center">
+<div class="score">
+    Score: {{score}}
+</div>
+
+<div class="center" style="line-height: 0px">
     
-    <div class="text-color" *ngFor="let row of board">
-        <div class="box" *ngFor="let col of board"
-            [ngClass]="{'snake': getSnake(row, col), 'food': (row === food.row && col === food.col)}"
-            >
-            {{row}},{{col}}
+    <div *ngFor="let row of board">
+        <div class="box" *ngFor="let col of board">
+            <div [ngClass]="{'left-border': col === 0,
+                'right-border': col === board.length-1,
+                'top-border': row === 0,
+                'bottom-border': row === board.length-1}">
+            <div [ngClass]="{'snake': getSnake(row, col),
+            'food': (row === food.row && col === food.col)}"></div>
+        </div>
         </div>
     </div>
 
+</div>
+
+<div class="center popup" *ngIf="!running && !isNewGame">
+    Press Space to start/resume.
+</div>
+
+<div class="popup center" *ngIf="isNewGame && !running">
+    GAme Over!! Press Space to start a new game.
 </div>
