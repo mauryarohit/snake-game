@@ -28,3 +28,5 @@ Steps to be performed:
  9. Handle game start/end.
 
 *= will do after making a basic snake game.
+
+Firebase integration is done, check it out here: https://snake-game-8fb0f.web.app/
