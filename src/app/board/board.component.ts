@@ -40,6 +40,7 @@ export class BoardComponent implements OnInit {
   }
 
   newGame() {
+    this.score = 0;
     this.snakeHead = new Snake(randomNumber(0, BOARD_SIZE), randomNumber(0, BOARD_SIZE), Direction.RIGHT);
     this.snakeTail = this.snakeHead;
     this.increaseSnakeLengthByOne(this.snakeHead.row, this.snakeHead.col);
@@ -48,7 +49,6 @@ export class BoardComponent implements OnInit {
   }
 
   endGame() {
-    // this.pauseGame();
     console.log('Game Over!');
     this.running = false;
     this.isNewGame = true;
@@ -166,7 +166,6 @@ export class BoardComponent implements OnInit {
   moveSnake(): void {
     // Invalid Keypress
     if (this.currDir === Direction.INVALID) { return; }
-    let len = 0;
     this.snakeHead.direction = this.currDir;
     let curr = this.snakeHead;
     let dir: Direction = this.snakeHead.direction;

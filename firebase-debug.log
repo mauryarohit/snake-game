@@ -1,0 +1,17 @@
+[debug] [2021-05-27T13:23:01.704Z] ----------------------------------------------------------------------
+[debug] [2021-05-27T13:23:01.709Z] Command:       D:\Program Files (x86)\nodejs\node.exe C:\Users\maury\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-05-27T13:23:01.710Z] CLI Version:   9.11.0
+[debug] [2021-05-27T13:23:01.710Z] Platform:      win32
+[debug] [2021-05-27T13:23:01.710Z] Node Version:  v14.17.0
+[debug] [2021-05-27T13:23:01.711Z] Time:          Thu May 27 2021 18:53:01 GMT+0530 (India Standard Time)
+[debug] [2021-05-27T13:23:01.712Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-27T13:23:01.729Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-27T13:23:01.730Z] > authorizing via signed-in user (maurya.rohit704@gmail.com)
+[debug] [2021-05-27T13:23:01.730Z] [iam] checking project snake-game-8fb0f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-27T13:23:01.735Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-27T13:23:01.735Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-27T13:23:02.282Z] <<< HTTP RESPONSE 200 {"date":"Thu, 27 May 2021 13:23:00 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-27T13:23:02.329Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/snake-game-8fb0f:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
